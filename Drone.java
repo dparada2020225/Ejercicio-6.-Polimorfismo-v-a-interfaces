@@ -3,10 +3,10 @@ public class Drone implements Transporte {
     private double capacidadCarga;
     private double distanciaMaxima;
 
-    public Drone(double tarifaBase, double capacidadCarga, double distanciaMaxima) {
-        this.tarifaBase = tarifaBase;
-        this.capacidadCarga = capacidadCarga;
-        this.distanciaMaxima = distanciaMaxima;
+    public Drone() {
+        this.tarifaBase = 5.0;
+        this.capacidadCarga = 5.0;
+        this.distanciaMaxima = 10.0;
     }
 
     @Override
@@ -43,6 +43,9 @@ public class Drone implements Transporte {
 
     @Override
     public String toString() {
-        return "Drone [tarifaBase=" + tarifaBase + ", capacidadCarga=" + capacidadCarga + ", distanciaMaxima=" + distanciaMaxima + "]";
+        return String.format(
+            "Drone (Tarifa Base: Q%.2f, Capacidad de Carga: %.2f kg, Distancia Máxima: %.2f km)",
+            tarifaBase, capacidadCarga, distanciaMaxima
+        );
     }
 }

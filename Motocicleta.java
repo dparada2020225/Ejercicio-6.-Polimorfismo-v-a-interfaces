@@ -2,9 +2,9 @@ public class Motocicleta implements Transporte {
     private double tarifaBase;
     private double capacidadCarga;
 
-    public Motocicleta(double tarifaBase, double capacidadCarga) {
-        this.tarifaBase = tarifaBase;
-        this.capacidadCarga = capacidadCarga;
+    public Motocicleta() {
+        this.tarifaBase = 10.0;
+        this.capacidadCarga = 50.0;
     }
 
     @Override
@@ -30,6 +30,8 @@ public class Motocicleta implements Transporte {
 
     @Override
     public String toString() {
-        return "Motocicleta [tarifaBase=" + tarifaBase + ", capacidadCarga=" + capacidadCarga + "]";
+        return String.format(
+            "Motocicleta (Tarifa Base: Q%.2f, Capacidad de Carga: %.2f kg)", tarifaBase, capacidadCarga
+        );
     }
 }

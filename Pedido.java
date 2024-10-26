@@ -17,44 +17,34 @@ public class Pedido {
         return idPedido;
     }
 
-    public void setIdPedido(int idPedido) {
-        this.idPedido = idPedido;
-    }
-
     public double getDistancia() {
         return distancia;
-    }
-
-    public void setDistancia(double distancia) {
-        this.distancia = distancia;
     }
 
     public double getPeso() {
         return peso;
     }
 
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
-
     public Transporte getTransporte() {
         return transporte;
-    }
-
-    public void setTransporte(Transporte transporte) {
-        this.transporte = transporte;
     }
 
     public double getCosto() {
         return costo;
     }
 
-    public void setCosto(double costo) {
-        this.costo = costo;
-    }
-
     @Override
     public String toString() {
-        return "Pedido [idPedido=" + idPedido + ", distancia=" + distancia + ", peso=" + peso + ", transporte=" + transporte + ", costo=" + costo + "]";
+        return String.format(
+            "\nPedido registrado:\n" +
+            "--------------------------\n" +
+            "ID Pedido      : %d\n" +
+            "Distancia (km) : %.2f\n" +
+            "Peso (kg)      : %.2f\n" +
+            "Transporte     : %s\n" +
+            "Costo Total    : Q%.2f\n" +
+            "--------------------------",
+            idPedido, distancia, peso, transporte.toString(), costo
+        );
     }
 }

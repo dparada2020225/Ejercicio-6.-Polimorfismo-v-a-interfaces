@@ -2,9 +2,9 @@ public class Camion implements Transporte {
     private double tarifaBase;
     private double capacidadCarga;
 
-    public Camion(double tarifaBase, double capacidadCarga) {
-        this.tarifaBase = tarifaBase;
-        this.capacidadCarga = capacidadCarga;
+    public Camion() {
+        this.tarifaBase = 20.0;
+        this.capacidadCarga = 10000.0;
     }
 
     @Override
@@ -34,6 +34,8 @@ public class Camion implements Transporte {
 
     @Override
     public String toString() {
-        return "Camion [tarifaBase=" + tarifaBase + ", capacidadCarga=" + capacidadCarga + "]";
+        return String.format(
+            "Camión (Tarifa Base: Q%.2f, Capacidad de Carga: %.2f kg)", tarifaBase, capacidadCarga
+        );
     }
 }
