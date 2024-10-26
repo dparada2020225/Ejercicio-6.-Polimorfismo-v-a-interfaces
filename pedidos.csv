@@ -1,4 +1,2 @@
-ID,Distancia,Peso,Tipo de Transporte,Costo,Tarifa Base,Capacidad de Carga,Distancia Máxima
-123,1.00,12.00,Motocicleta,10.00,10.00,50.00,0.00
-1,1.00,1.00,Drone,5.00,5.00,5.00,10.00
-1,1.00,1.00,Drone,5.00,5.00,5.00,10.00
+ID,Distancia,Peso,Tipo de Transporte,Costo,Tarifa Base,Capacidad de Carga,Distancia Máxima,Fecha
+123,123.00,123.00,Camion,2337.00,20.00,10000.00,0.00,2024-10-25

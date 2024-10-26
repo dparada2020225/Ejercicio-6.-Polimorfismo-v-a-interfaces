@@ -29,7 +29,11 @@ public class Interfaz {
                     interfaz.registrarPedido(scanner);
                     break;
                 case 2:
-                    gestionador.generarReporteMensual();
+                    System.out.print("Ingrese el mes (1-12): ");
+                    int mes = scanner.nextInt();
+                    System.out.print("Ingrese el año (yyyy): ");
+                    int anio = scanner.nextInt();
+                    gestionador.generarReporteMensual(mes, anio);
                     break;
                 case 3:
                     System.out.println("Pedidos guardados automáticamente en el archivo CSV.");
